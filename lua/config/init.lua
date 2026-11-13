@@ -5,3 +5,5 @@ require("config.set")
 require("config.keymaps")
 
 require("config.setup_lazy_nvim")
+
+require("config.autocmds")
