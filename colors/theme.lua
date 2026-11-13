@@ -1,3 +1,5 @@
+-- Use `:Inspect` to get the highlight group of the text below cursor
+
 -- vim.cmd'hi!         Normal                              guifg=#ffffff   guibg=#15191e   guisp=None'
 vim.cmd'hi!         Normal                              guifg=#ffffff   guibg=None      guisp=None'
 
@@ -12,6 +14,7 @@ vim.cmd'hi! link    StatusLineNC                        StatusLine'
 
 
 vim.cmd'hi!         Keyword                             guifg=#ff7b72   guibg=None      guisp=None'
+vim.cmd'hi! link    Statement                           Keyword'
 vim.cmd'hi! link    Conditional                         Keyword'
 vim.cmd'hi!         Identifier                          guifg=#ffffff   guibg=None      guisp=None'
 vim.cmd'hi! link    Operator                            Keyword'
@@ -36,14 +39,18 @@ vim.cmd'hi! link    netrwClassify                       Keyword'
 vim.cmd'hi!         Cursor                              guifg=None      guibg=#79c0ff   guisp=None'
 vim.cmd'hi! link    lCursor                             Cursor'
 
+-- -- Custom highlight groups
+--
+-- vim.cmd'hi! link    @Colon                              Delimiter'
+-- vim.cmd'hi! link    @DoubleColon                        @Colon'
+-- vim.cmd'hi! link    @Arrow                              Keyword'
+-- vim.cmd'hi! link    @BigArrow                           @Arrow'
+-- vim.cmd'hi! link    @AtSign                             Keyword'
+-- vim.cmd'hi! link    @GreaterThan                        Keyword'
+-- vim.cmd'hi! link    @SmallerThan                        Keyword'
 
-vim.cmd'hi! link    @Colon                              Keyword'
-vim.cmd'hi! link    @DoubleColon                        @Colon'
-vim.cmd'hi! link    @Arrow                              Keyword'
-vim.cmd'hi! link    @BigArrow                           @Arrow'
-vim.cmd'hi! link    @GreaterThan                        Keyword'
-vim.cmd'hi! link    @SmallerThan                        Keyword'
 vim.cmd'hi! link    @lsp.type.enumMember                Identifier'
+vim.cmd'hi! link    @lsp.type.typeAlias                 Type'
 vim.cmd'hi!         @variable                           guifg=#fae3c6   guibg=None      guisp=None'
 vim.cmd'hi! link    @variable.builtin                   @variable'
 vim.cmd'hi! link    @type.builtin                       Type'

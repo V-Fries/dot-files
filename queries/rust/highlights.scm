@@ -1,5 +1,7 @@
 ;; extends
 
+; I think this file doesn't work since nvim 0.12, will need to find a new way to make this work
+
 (
     "::"
     @DoubleColon
